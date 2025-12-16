@@ -21,3 +21,19 @@ Each control point moves toward a target position using:
 A spring force proportional to displacement
 A damping factor to prevent oscillation
 This results in smooth and natural motion without using any external physics engine.
+
+Interaction
+The endpoints of the rope remain fixed.
+Mouse movement affects the target positions of the middle control points, causing the rope to bend and react dynamically in real time.
+
+Rendering and Performance
+The visualization is rendered using the HTML5 Canvas API and updated using requestAnimationFrame, ensuring smooth animation at approximately 60 frames per second.
+Design Constraints Followed
+No prebuilt Bézier or physics libraries were used
+All mathematics and motion logic were implemented manually
+Code is organized into clear sections for math, physics, rendering, and input
+The simulation is fully interactive and real time
+
+Conclusion
+This project demonstrates how mathematical curve representation and basic physics concepts can be combined to create an interactive and visually intuitive simulation. 
+It provides a clear understanding of cubic Bézier curves, tangents, and motion smoothing through spring-based dynamics.
